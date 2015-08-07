@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cycle-live-edit-starter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>From index.html: Edit me!</p>
+
+  <div id="app"></div>
+
+  <script src="app.js"></script>
+  <script>
+    window.addEventListener('fb-flo-reload', function onReload() {
+      // TODO: I don't know why, but this is called *twice*!
+      console.log('test');
+    });
+  </script>
+</body>
+</html>
